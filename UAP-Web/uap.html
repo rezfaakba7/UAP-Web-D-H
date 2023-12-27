@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Barang Transaksi</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          padding: 2px;
+          text-align: left;
+        }
+        th{
+            font-weight: normal;
+        }
+        </style>
+</head>
+<body>
+    <h1>Transaksi Penjualan dan Pembelian Barang</h1>
+    <table>
+        <tr>
+            <th><b>Kode</b></th>
+            <th><b>Barang</b></th>
+            <th><b>Harga</b></th>
+        </tr>
+        <tr>
+            <th>001</th>
+            <th>Barang A</th>
+            <th>10.000</th>
+        </tr>
+        <tr>
+            <th>002</th>
+            <th>Barang B</th>
+            <th>20.000</th>
+        </tr>
+        <tr>
+            <th>003</th>
+            <th>Barang C</th>
+            <th>30.000</th>
+        </tr>
+    </table>
+    <h2>Inputan User</h2>
+    <table>
+        <tr>
+            <th>Masukkan Kode</th>
+            <td>:</td>
+            <td><input type="text" id="kode" name="kode"></td>
+        </tr>
+        <tr>
+            <th>Banyaknya Barang</th>
+            <td>:</td>
+            <td><input type="text" id="jumlah" name="jumlah"></td>
+        </tr>
+        <th style="border: none;"><button onclick="prosesTransaksi()">Submit</button></th>
+    </table> 
+    <div id="hasil"></div>
+    <script src="fungsi.js"></script>
+</body>
+</html>
